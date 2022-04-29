@@ -1,0 +1,29 @@
+package collection;
+
+public class SungJukDTO {
+	private String name;
+	private double avg;
+	private int no, kor, eng, math, tot;
+	
+	
+	public SungJukDTO (int no, String name, int kor, int eng, int math) {
+		this.no = no;
+		this.name = name;
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+	}
+	
+}
+
+
+/*
+1. 번호(no), 이름(name), 국어(kor), 영어(eng), 수학(math)점수를 입력하여 총점(tot)과 평균(avg)을 구하시오
+번호 no
+이름 name
+국어 kor
+영어 eng
+수학 math
+총점 tot
+평균 avg
+*/

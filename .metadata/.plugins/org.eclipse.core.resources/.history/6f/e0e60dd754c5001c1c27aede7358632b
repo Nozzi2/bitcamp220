@@ -1,0 +1,111 @@
+package _abstract;
+
+import java.util.Scanner;
+
+class CalendarTest {
+	//필드
+	int weekday;
+	int year;
+	int month;
+	
+	//생성자로 날짜 입력받기
+	public CalendarTest(int year, int month) {
+		this.year = year;
+		this.month = month;
+	}
+	
+	public int getYear() {
+		return year;
+	}
+	
+	public int getMonth() {
+		return month;
+	}
+	
+	public int getWeekday() {
+		return weekday;
+	}
+	
+	//메소드
+	public void calc() {
+		
+	}
+	
+	public void display(int weekday) {
+		String[] weekdayKor = {"일","월","화","수","목","금","토"};
+		for(int i=0; i<weekdayKor.length; i++) {
+			System.out.print(String.format("%3s", weekdayKor[i])); // % 'n'칸만큼 떨어져서 출력
+		}
+		System.out.println();
+		for(int i=0; i<=31; i++) {
+			System.out.print(String.format("%4d", (i+1)));
+			if((i+1)%7==0) {
+				System.out.println();
+			}
+		}
+		
+	}
+	
+}
+
+
+//-----------------------------------------
+public class CalendarMain {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("년도를 입력하세요 : ");
+		int year = scan.nextInt();
+		System.out.print("월을 입력하세요 : ");
+		int month = scan.nextInt();
+		
+		CalendarTest calendarTest = new CalendarTest(year, month);
+		calendarTest.display(1);
+		
+		
+
+	}
+
+}
+
+/*
+	Calendar cal = Calendar.getInstance();
+	int year = cal.get(Calendar.YEAR); //파라미터로 상수 전달
+	int month = cal.get(Calendar.MONTH)+1; //1월이 0부터 시작됨 ㅡㅡ
+	int day = cal.get(Calendar.DAY_OF_MONTH);
+	String[] weekKor = {"일","월","화","수","목","금","토"};
+	int week = cal.get(Calendar.DAY_OF_WEEK)-1;
+	int hour = cal.get(Calendar.HOUR_OF_DAY);
+	int min = cal.get(Calendar.MINUTE);
+	int sec = cal.get(Calendar.SECOND);
+	System.out.println(year+"년 "+month+"월 "+day+"일 "+weekKor[week]+"요일");
+	System.out.println(hour+"시 "+min+"분 "+sec+"초");
+ */
+
+
+
+/*
+[문제] 만년 달력
+1. 년, 월을 입력하여 달력을 출력하시오.
+2. 클래스 : CalendarTest
+   필드
+   생성자 : 입력
+   메소드 : calc() -> 월마다 끝나는 일이 다름.
+                     월마다 시작하는 요일이 다름
+          display -> 
+
+
+[실행결과]
+년도 입력 : 2002
+월 입력 : 10
+
+일  월  화  수  목  금  토
+       1   2  3   4  5
+6   7  8   9  10  11 12
+..
+27  28 29  30 31
+
+
+
+
+*/

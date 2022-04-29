@@ -1,0 +1,37 @@
+package inheritance;
+
+import java.util.Scanner;
+
+class ShapeTest {
+	protected double area;
+	protected Scanner scan = new Scanner(System.in);
+
+	public ShapeTest() {
+		System.out.println("ShapeTest 기본 생성자");
+	}
+	
+	public void calcArea() {
+		System.out.println("도형을 계산합니다.");
+	}
+	public void dispArea() {
+		System.out.println("도형을 출력합니다.");
+	}
+}
+
+//-------------------------
+
+class SamTest extends ShapeTest {
+	public SamTest() {
+		System.out.println("SamTest 기본 생성자");
+	}
+}
+
+//-------------------------
+
+public class ShapeMain {
+	public static void main(String[] args) {
+		SamTest sam = new SamTest();
+
+	}
+
+}

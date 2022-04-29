@@ -1,0 +1,38 @@
+package _abstract;
+
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+
+public class NumberMain {
+
+	public static void main(String[] args) {
+		//NumberFormat nf = new NumberFormat(); 에러발생
+		NumberFormat nf = new DecimalFormat();
+		
+		System.out.println(nf.format(12345678.456789)); //12,345,678.457
+		System.out.println(nf.format(12345678)); //12,345,678
+		System.out.println();
+
+		
+		//유효숫자가 아닌것은 표현하지 않는다.
+		NumberFormat nf2 = new DecimalFormat("#,###.##원");
+		System.out.println(nf2.format(12345678.456789)); //12,345,678.46원
+		System.out.println(nf2.format(12345678)); //12,345,678원
+		System.out.println();
+		
+		//0을 강제로 표시
+		NumberFormat nf3 = new DecimalFormat("#,###.00원");
+		System.out.println(nf3.format(12345678.456789)); //12,345,678.46원
+		System.out.println(nf3.format(12345678)); //12,345,678.00원
+		System.out.println();
+		
+		
+		NumberFormat nf4 = NumberFormat.getInstance();  //메소드를 이용해서 객체를 생성할 수도 있다.
+														//단, 메소드가 static으로 선언되어있어야함
+		System.out.println(nf4.format(12345678.456789)); //12,345,678.46원
+		System.out.println(nf4.format(12345678)); //12,345,678.00원
+		System.out.println();
+		
+	}
+
+}

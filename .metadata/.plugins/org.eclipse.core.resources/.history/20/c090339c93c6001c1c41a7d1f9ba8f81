@@ -1,0 +1,10 @@
+package constructor;
+
+public class FruitMain_lect {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

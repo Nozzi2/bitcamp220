@@ -1,0 +1,56 @@
+package constructor;
+
+class StaticTest {
+	//필드
+	private int a; //인스턴스 변수 (객체 생성해야만 쓸 수 있음.)
+	static int b; //클래스 변수 (클래스 아무곳에서 쓸 수 있음) (=공유 변수)
+	
+	static { //스태틱 영역
+		System.out.println("초기화 영역");
+		b=3;
+		output();
+	}
+	
+	public StaticTest() { //생성자가 호출될때 필드가 초기값으로 초기화가 된다.
+		System.out.println("StaticTest 기본 생성자");
+		this.a = 3;
+	}
+	
+	public void calc() {
+		a++;
+		b++;
+	}
+	
+	public void disp() {
+		System.out.println("a = "+ a +", b = "+ b );
+	}
+	
+	public static void output() {
+		System.out.println("static method...!");
+	}
+}
+
+
+//--------------------------------------------
+public class StaticMain {
+
+	public static void main(String[] args) {
+		
+		StaticTest aa = new StaticTest();
+		aa.calc();
+		aa.disp(); // a=4, b=4
+		System.out.println();
+		
+		StaticTest bb = new StaticTest();
+		bb.calc();
+		bb.disp(); // a=4, b=5
+		System.out.println();
+		
+		StaticTest cc = new StaticTest();
+		cc.calc();
+		cc.disp(); // a=4, b=6
+		System.out.println();
+		
+		StaticTest.output();
+	}
+}

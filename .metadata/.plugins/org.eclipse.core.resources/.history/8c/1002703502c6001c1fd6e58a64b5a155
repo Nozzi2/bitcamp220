@@ -1,0 +1,9 @@
+package zoo;
+
+public class Zoo {
+
+	public void tiger() {
+		System.out.println("무서운 호랑이");
+	}
+
+}

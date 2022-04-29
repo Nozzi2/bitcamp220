@@ -1,0 +1,19 @@
+package inheritance;
+
+class Final {
+	
+}
+
+//-------------------------
+public class FinalMain {
+
+	public static void main(String[] args) {
+		final int AGE = 25; //상수화
+		//AGE = 30; 에러발생
+		
+		System.out.println("상수 AGE = "+AGE);
+		
+		
+	}
+
+}

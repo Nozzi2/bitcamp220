@@ -1,0 +1,19 @@
+package inheritance;
+
+class Test2 extends Object {
+	
+}
+
+public class ObjectMain {
+
+	public static void main(String[] args) {
+		Test2 t = new Test2();
+		System.out.println("객체 t = "+t); //클@16진수
+		System.out.println("객체 t = "+t.toString());
+		System.out.println("객체 t = "+t.hashCode()); //10진수
+		
+		
+		
+	}
+
+}

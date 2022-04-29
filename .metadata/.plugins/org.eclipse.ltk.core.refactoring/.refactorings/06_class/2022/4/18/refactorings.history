@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;09_interface/src/_interface&apos;&#x0D;&#x0A;- Original project: &apos;06_class&apos;&#x0D;&#x0A;- Destination element: &apos;09_interface/src/_interface&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     _class.ProductMain.java&#x0D;&#x0A;     _class.ProductDTO.java&#x0D;&#x0A;     _class.ProductService_lect.java" description="Copy compilation units" destination="=09_interface/src&lt;_interface" element1="/src&lt;_class{ProductMain.java" element2="/src&lt;_class{ProductDTO.java" element3="/src&lt;_class{ProductService_lect.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1651036759991" units="3" version="1.0"/>
+</session>

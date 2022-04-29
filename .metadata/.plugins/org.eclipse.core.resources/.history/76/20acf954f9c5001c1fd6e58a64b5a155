@@ -1,0 +1,17 @@
+package _interface;
+
+class Test {
+	
+}
+
+public class ObjectMain {
+
+	public static void main(String[] args) {
+		Test t = new Test();
+		System.out.println("객체 t = "+t); //클@16진수
+		
+		
+		
+	}
+
+}

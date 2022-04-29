@@ -1,0 +1,18 @@
+package _abstract;
+
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+
+public class NumberMain {
+
+	public static void main(String[] args) {
+		//NumberFormat nf = new NumberFormat();
+		NumberFormat nf = new DecimalFormat();
+		
+		System.out.println(nf.format(12345678.456789));
+		System.out.println(nf.format(12345678));
+		System.out.println();
+
+	}
+
+}

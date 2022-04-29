@@ -1,0 +1,35 @@
+package collection;
+
+import java.util.ArrayList;
+
+public class SungJukService {
+	private ArrayList<SungJukDTO> list; //이 문장을 고치지 마세요.
+	
+	
+	
+	public void menu() {
+		
+	}
+	
+	public void insertArticle() {
+		
+	}
+	
+	
+	public void printArticle() {
+		
+	}
+	
+	public void searchArticle() {
+		
+	}
+	
+	public void deleteArticle() {
+		
+		
+	}
+	
+	
+	
+	
+}

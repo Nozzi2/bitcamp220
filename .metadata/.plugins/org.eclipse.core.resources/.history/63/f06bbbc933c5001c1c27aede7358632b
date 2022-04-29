@@ -1,0 +1,33 @@
+package constructor;
+
+class StaticTest {
+	private int a;
+	private static int b;
+	
+	public StaticTest() {
+		
+	}
+	
+	public void calc() {
+		a++;
+		b++;
+	}
+	
+	public void disp() {
+		System.out.println("a = "+ a +", b = "+ b );
+	}
+}
+
+
+//--------------------------------------------
+public class StaticMain {
+
+	public static void main(String[] args) {
+		StaticTest aa = new StaticTest();
+		aa.calc();
+		aa.disp();
+		
+
+	}
+
+}

@@ -1,0 +1,89 @@
+package constructor;
+
+import java.util.Scanner;
+
+public class MemberService_lect {
+	private MemberDTO[] ar = new MemberDTO[5];
+	
+	public void menu() {
+		int input=0;
+		
+		while(true) {
+			System.out.println();
+			System.out.println("**************");
+			System.out.println("   1. 가입");
+			System.out.println("   2. 출력");
+			System.out.println("   3. 수정");
+			System.out.println("   4. 탈퇴");
+			System.out.println("   5. 끝내기");
+			System.out.println("**************");
+			System.out.print("  번호 : ");
+			
+			input=sc.nextInt();
+			sc.nextLine();
+			
+			if(input == 1) {
+				insertMember();
+			} else if(input == 2) {
+				list();
+			} else if(input == 3) {
+				updateMember();
+			} else if(input == 4) {
+				deleteMember();
+			} else if(input == 5) {
+				break;
+			}//if
+		}//while
+	}//menu()
+	
+	
+	public void insertMember() {
+		
+	}//insertMember()
+	
+	//총 5명중에서 등록된 회원만 보여준다
+	public void list() {
+
+	}//list()
+	
+	/*
+	→ 회원이 없을 때
+	핸드폰 번호 입력 : 010-123-1234
+	찾고자 하는 회원이 없습니다
+	
+	-------------------------------
+	→ 회원이 있을 때
+	핸드폰 번호 입력 : 010-123-1234
+	
+	이름      나이      핸드폰         주소
+	홍길동   25      010-123-1234   서울
+	
+	수정 할 이름 입력 : 
+	수정 할 나이 입력 :    
+	수정 할 핸드폰 입력 : 
+	수정 할 주소 입력 : 
+	
+	수정 완료
+	 */
+	public void updateMember() {
+		
+	}//updateMember()
+	
+	
+	/*
+	4번 삭제를 눌렀을 때 처리 - deleteMember()
+	→ 회원이 없을 때
+	핸드폰 번호 입력 : 010-123-1234
+	찾고자 하는 회원이 없습니다
+	
+	-------------------------------
+	→ 회원이 있을 때
+	핸드폰 번호 입력 : 010-123-1234
+	
+	삭제 완료
+	 */
+	public void deleteMember() {
+
+		
+	} //deleteMember()
+}

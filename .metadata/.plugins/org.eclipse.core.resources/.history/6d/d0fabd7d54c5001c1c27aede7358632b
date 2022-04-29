@@ -1,0 +1,58 @@
+package _abstract;
+
+
+class CalendarTest {
+	//필드
+	
+	
+	//생성자로 날짜 입력받기
+	
+	
+	//메소드
+	public void calc() {
+		
+	}
+	
+	public void display() {
+		
+	}
+	
+}
+
+
+//-----------------------------------------
+public class CalendarMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+/*
+[문제] 만년 달력
+1. 년, 월을 입력하여 달력을 출력하시오.
+2. 클래스 : CalendarTest
+   필드
+   생성자 : 입력
+   메소드 : calc() -> 월마다 끝나는 일이 다름.
+                     월마다 시작하는 요일이 다름
+          display -> 
+
+
+[실행결과]
+년도 입력 : 2002
+월 입력 : 10
+
+일  월  화  수  목  금  토
+       1   2  3   4  5
+6   7  8   9  10  11 12
+..
+27  28 29  30 31
+
+
+
+
+*/

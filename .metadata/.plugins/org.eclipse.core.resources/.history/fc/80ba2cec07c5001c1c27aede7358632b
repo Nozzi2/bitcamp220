@@ -1,0 +1,19 @@
+package inheritance;
+
+class Test {
+	private int a,b;
+	//접근제한자 자리에 아무것도 없으면 default로 본다.
+	//default는 같은 패키지에서 모두 사용이 가능하다.
+	
+}
+
+//------------------------------------
+public class TestMain {
+
+	public static void main(String[] args) {
+		Test aa = new Test();
+		System.out.println("객체 aa = "+aa);
+
+	}
+
+}

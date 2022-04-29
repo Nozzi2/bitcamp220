@@ -1,0 +1,32 @@
+package inheritance;
+
+class Test2 extends Object {
+	
+}
+
+class Sample {
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "개바부";
+	}
+	
+}
+
+public class ObjectMain {
+
+	public static void main(String[] args) {
+		Test2 t = new Test2();
+		System.out.println("객체 t = "+t); //클@16진수
+		System.out.println("객체 t = "+t.toString());
+		System.out.println("객체 t = "+t.hashCode()); //10진수
+		System.out.println();
+		
+		Sample s = new Sample();
+		System.out.println("객체 s = "+s.toString());
+		
+		
+		
+	}
+
+}

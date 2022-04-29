@@ -1,0 +1,27 @@
+package inheritance;
+
+public class SubTest extends SuperTest{ //자식클래스
+	private String name;
+	private int age;
+	
+	public SubTest( String name, int age, double weight, double height) {
+		System.out.println("Sub 생성자");
+		this.name = name;
+		this.age = age;
+		this.weight = weight;
+		this.height = height;
+	}
+
+	public void output() {
+		System.out.println("이름 = " + name);
+		System.out.println("나이 = " + age);
+		System.out.println("몸무게 = " + weight);
+		System.out.println("키 = " + height);
+	}
+	
+	
+	public static void main(String[] args) {
+		//Sub class를 생성하면 나와 내 부모를 같이 생성한다. => 생성자 2번 호출된다.
+		SubTest aa = new SubTest("홍길동", 25, 72.8, 183.6);
+	}
+}

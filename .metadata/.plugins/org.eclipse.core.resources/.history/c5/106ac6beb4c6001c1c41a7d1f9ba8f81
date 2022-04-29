@@ -1,0 +1,23 @@
+package collection;
+
+public class PersonSort {
+
+	public static void main(String[] args) {
+		String[] ar = {"orange", "apple", "banana", "pear", "peach", "applemango"};
+		
+		System.out.println("정렬 전 = ");
+		for(String str : ar) {
+			System.out.println(str + " ");
+		}
+		System.out.println();
+		
+		System.out.println("정렬 후 = ");
+		for(String str : ar) {
+			System.out.println(str + " ");
+		}
+		System.out.println();
+		
+
+	}
+
+}

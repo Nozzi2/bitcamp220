@@ -1,0 +1,13 @@
+package _abstract;
+
+import java.util.Date;
+
+public class Today {
+
+	public static void main(String[] args) {
+		Date date = new Date();
+		System.out.println("오늘 날짜 : "+date);
+		System.out.println();
+	}
+
+}

@@ -1,0 +1,54 @@
+package inheritance;
+
+import java.util.Scanner;
+
+class ShapeTest {
+	protected double area;
+	protected Scanner scan = new Scanner(System.in);
+
+	public ShapeTest() {
+		System.out.println("ShapeTest 기본 생성자");
+	}
+	
+	public void calcArea() {
+		System.out.println("도형을 계산합니다.");
+	}
+	public void dispArea() {
+		System.out.println("도형을 출력합니다.");
+	}
+}
+
+//-------------------------
+
+class SamTest extends ShapeTest {
+	protected int base, height;
+	
+	public SamTest() {
+		System.out.println("SamTest 기본 생성자");
+		System.out.print("밑변 : ");
+		base = scan.nextInt();
+		System.out.print("높이 : ");
+		height = scan.nextInt();
+	}
+	
+	public void calcArea() { //Override
+		
+		area = base * height / 2.0;
+	}
+	
+	public void dispArea() { //Override
+		System.out.println("삼각형 넓이 = " + area);
+	}
+}
+
+//-------------------------
+
+public class ShapeMain {
+	public static void main(String[] args) {
+		SamTest sam = new SamTest(); //부모 생성자 먼저 호출되고 자식 생성자가 호출됨
+		sam.calcArea();
+		sam.dispArea();
+
+	}
+
+}
