@@ -1,0 +1,14 @@
+package exception;
+
+public class ExceptionMain {
+
+	public static void main(String[] args) {
+		if(args.length >= 1) { //데이터가 입력 되었으면
+			System.out.println("args[0] : "+args[0]);
+		}
+		
+		
+
+	}
+
+}

@@ -34,5 +34,23 @@ public class AbstractMain {
 			public void bb() {}
 		};
 		in.aa();
+		
+		//AbstractTest at = new AbstractTest(); 추상클래스로는 객체 생성할 수 없다!
+		//생성하려고 1. 자식클래스
+		//   2. 익명 Inner Class
+		
+		AbstractTest at = new AbstractTest() {
+
+			@Override
+			public void setName(String name) {
+				// TODO Auto-generated method stub
+				this.name = name;
+			}
+		};
+		
+		AbstractExam ae = new AbstractExam() {};
+		
+		
+		
 	}
 }

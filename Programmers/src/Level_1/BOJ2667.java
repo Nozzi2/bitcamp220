@@ -34,7 +34,7 @@ public class BOJ2667 {
 			}
 		}
 		
-		Main t = new Main();
+		BOJ2667 t = new BOJ2667();
 		ArrayList<Integer> nums = new ArrayList<Integer>();
 		int value;
 		for(int i=0; i<miro.length;i++) {
