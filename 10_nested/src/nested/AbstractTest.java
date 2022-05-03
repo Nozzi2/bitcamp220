@@ -8,8 +8,4 @@ public abstract class AbstractTest { //POJO
 	}
 
 	public abstract void setName(String name); //추상메소드
-	
-	
-
-
 }

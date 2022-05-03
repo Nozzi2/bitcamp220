@@ -13,10 +13,12 @@ public class EnumMain {
 	public static void main(String[] args) {
 		System.out.println(EnumColor.RED);
 		System.out.println();
-		/*
-		for(EnumColor data : Enumcolor.values());
-			System.out.println(data.ordinal()+);
-		 */
+		
+		for(EnumColor data : EnumColor.values()) {
+			System.out.println(data.ordinal());
+		}
+			
+		 
 	}
 
 }

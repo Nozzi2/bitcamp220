@@ -1,6 +1,7 @@
 package exception;
 
-public class MakeException extends Exception { //개발자가 만든 Exception 클래스
+//개발자가 만든 Exception 클래스
+public class MakeException extends Exception { 
 	private String errorMsg;
 	
 	public MakeException() {}
@@ -13,5 +14,4 @@ public class MakeException extends Exception { //개발자가 만든 Exception �
 	public String toString() {
 		return errorMsg;
 	}
-
 }

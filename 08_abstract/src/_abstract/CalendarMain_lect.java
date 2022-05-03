@@ -40,7 +40,6 @@ class CalendarTest1 {
 			System.out.print(i + "\t");
 			if(week%7 == 0) System.out.println();
 			week++;
-			
 		}
 	}
 	

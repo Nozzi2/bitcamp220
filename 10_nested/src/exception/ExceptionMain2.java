@@ -16,8 +16,6 @@ public class ExceptionMain2 {
 		if(dan > 9 || dan < 2) {
 			//System.out.println("범위초과");
 			//return;
-			
-			
 			try {
 				//개발자가 강제로 Exception 발생하게 할 수 있음.
 				throw new MakeException("내가 만든 에러메시지");

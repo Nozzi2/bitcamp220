@@ -7,15 +7,16 @@ import java.io.InputStreamReader;
 public class ExceptionMain {
 
 	public static void main(String[] args) {
+		// 실행 Exception
+		// 사용자가 직접 error가 발생할 곳에 예외처리를 해주는 것
 		if(args.length >= 1) { //데이터가 입력 되었으면
 			System.out.println("args[0] : "+args[0]+"\n");
 		}
 		
 		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
-		
-		
 		//int data = br.read(); //1개 문자
 		
+		//컴파일 Exception
 		try {
 			System.out.print("정수 입력 : ");
 			int a = Integer.parseInt(br.readLine());
@@ -25,7 +26,6 @@ public class ExceptionMain {
 			
 			System.out.println(a+"/"+b+"="+(a/b));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (NumberFormatException e) {
 			System.out.println("숫자 형식만 입력하세요. !!");
@@ -35,5 +35,4 @@ public class ExceptionMain {
 			System.out.println("finally : error가 있건 없건 무조건 실행");
 		}
 	}
-
 }

@@ -23,6 +23,7 @@ public class Outer {
 			
 		}
 	}//class Inner
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Outer ou = new Outer();
@@ -35,13 +36,12 @@ public class Outer {
 		in2.disp();
 		
 		Outer.Inner in3 = ou.new Inner();
-		//in3.name = "코난"; //클래스 안에서만 쓸 수 있는거임
+		//in3.name = "코난"; //Innner 클래스 안에서만 쓸 수 있는거임
 		in3.age = 30;
 		in3.disp();
 		
 		Outer.Inner in4 = new Outer().new Inner();
 		in4.age=35; //Outer를 통해서 age로 접근할 수 없음. 
-		in4.disp(); //age = null 출력됨
+		in4.disp(); //name = null 출력됨
 	}
-
 }
